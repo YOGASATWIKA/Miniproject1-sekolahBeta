@@ -7,8 +7,6 @@ import (
 	"strings"
 )
 
-// Sistem Manajemen Pesanan Restoran
-
 type Buku struct {
 	kodeBuku string
 	judulBuku string
@@ -37,7 +35,6 @@ func TambahBuku() {
 	fmt.Print("Silahkan Masukan kode buku : ")
 
 	kodeBuku, err := inputanUser.ReadString('\n')
-	// _, err := fmt.Scanln(&menuPelanggan)
 	if err != nil {
 		fmt.Println("Terjadi Error:", err)
 		return
@@ -114,11 +111,17 @@ func LihatBuku() {
 }
 
 
-//Fungsi mengedit data buku
+//Fungsi mengedit data buku(Belum selesai)
 func EditBuku() {
+	fmt.Println("=================================")
+	fmt.Println("Edit data buku")
+	fmt.Println("=================================")
+	LihatBuku()
+	fmt.Println("=================================")
+
+
+
 	fmt.Println("data Buku Berhasil diedit!")
-
-
 }
 
 
